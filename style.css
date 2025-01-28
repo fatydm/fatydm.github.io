@@ -1,11 +1,13 @@
 header{
     display: flex;
     justify-content: space-between;
-    background-color: #333;
+    align-items: center;
+    background-color: #e7d3af;
     color: white;
     padding: 10px;
     text-align: center;
     font-family: Arial, sans-serif;
+    border-radius: 20px;
 }
 
 a{
@@ -20,20 +22,35 @@ li{
 }
 
 body{
-    margin: 0;
-    padding: 0;
+    margin: 20px;
+    background-color: rgb(238, 223, 202);
 }
 
-main{
-    background-color: antiquewhite;
+section img{
+    justify-content: center;
+    width:300px;
+    height: 500px;
+    border-radius: 20px;
+    border: 3px solid rgb(238, 223, 202);
 }
-
+.presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #e7d3af;
+    color: white;
+    font-family: Arial, sans-serif;
+}
 footer{
-    background-color: #333;
+    background-color: #e7d3af;
     color: white;
     text-align: center;
     padding: 10px;
     font-family: Arial, sans-serif; 
+    border-radius: 20px;
 }
 
 footer img{
@@ -41,4 +58,5 @@ footer img{
     height: 50px;
     margin: 10px;
     border-radius: 20px;
+
 }
