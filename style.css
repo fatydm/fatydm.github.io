@@ -1,4 +1,9 @@
-header{
+body {
+    margin: 0;
+    background-color: rgb(238, 223, 202);
+}
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,30 +15,38 @@ header{
     border-radius: 20px;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
     cursor: pointer;
 }
 
-li{
+li {
     display: inline;
     padding: 10px;
 }
 
-body{
-    margin: 20px;
-    background-color: rgb(238, 223, 202);
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #e7d3af;
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
-section img{
+section img {
     justify-content: center;
-    width:300px;
-    height: 500px;
+    width: 200px;
+    height: 300px;
     border-radius: 20px;
     border: 3px solid rgb(238, 223, 202);
 }
-.presentation{
+
+.presentation {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,16 +57,33 @@ section img{
     color: white;
     font-family: Arial, sans-serif;
 }
-footer{
+
+.presentation_about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #e7d3af;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: flex;
+}
+
+footer {
     background-color: #e7d3af;
     color: white;
     text-align: center;
     padding: 10px;
-    font-family: Arial, sans-serif; 
+    font-family: Arial, sans-serif;
     border-radius: 20px;
 }
 
-footer img{
+footer img {
     width: 50px;
     height: 50px;
     margin: 10px;
