@@ -4,93 +4,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>FD Website</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://kit.fontawesome.com/d6b9f53705.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="header">
-        <h1>Portfolio de Faty</h1>
+        <a href="#home" class="logo">Faty <span>Diarra</span></a>
+
+        <i class="fa-solid fa-bars menu-icon" id="menu"></i>
 
         <nav class="navbar">
-            <ul>
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#projets">Mes projets</a></li>
-                <li><a href="#about">À propos de moi</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="#home" class="active">Accueil</a>
+            <a href="#education">Parcours</a>
+            <a href="#projets">Projets</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <div class="title">
-        <p>DÉVELOPPEUSE FULLSTACK</p>
-    </div>
-    <main class="container">
-        <section class="positionUn">
-            <article class="presentation">
-                <img src="./assets/faty.jpeg" alt="photo de Faty">
-            </article>
-        </section>
-        <section class="positionDeux">
-            <article class="presentation_about">
-                <p>Bienvenue sur mon portfolio. <br>
-                    Je suis Faty, une jeune développeuse web passionnée par le code et le
-                    design. <br>
-                    J'ai commencé à apprendre le développement web il y a 1 an et depuis je n'ai jamais arrêté. <br>
-                    J'ai réalisé plusieurs projets personnels et professionnels. <br>
-                    Je suis à la recherche d'une alternance en
-                    développement web pour continuer à apprendre et à progresser. </p>
-            </article>
-        </section>
-        <section class="positionTrois">
-            <article class="presentation_about">
-                <p>Curieuse</p>
-            </article>
-            <article class="presentation_about">
-                <p>Autonome</p>
-            </article>
-        </article>
-        <article class="presentation_about">
-            <p>Esprit d'équipe</p>
-        </article>
-        </section>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Salut, moi c'est <span>Faty</span></h1>
+            <div class="animation-container">
+                <h3>
+                    <span class="text first-text"> Je suis </span>
+                    <span class="text second-text"> Développeuse Web</span>
+                </h3>
+            </div>
+            <p>J'ai commencé à apprendre le codage en 2024 et depuis je n'ai jamais arrêté.
+                J'ai réalisé plusieurs projets personnels et professionnels que tu peux découvrir sur ma page.
+            </p>
 
-    </main>
-    <section>
-        <article>
-            <h2>Mes projets</h2>
-        </article>
-        <section>
-            <article>
-                <h2></h2>
-                <p> </p>
-            </article>
-        </section>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/fdiarra/" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
+                <a href="https://github.com/fatydm" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram" target="_blank"></i></a>
+                <a href="#"><i class="fa-brands fa-square-x-twitter" target="_blank"></i></a>
+            </div>
 
-        <!--<h2>Mes réalisations :</h2>
-    <section>
-        <article>
-            <h3>Projet 1: OHMYFOOD</h3>
-            <p>Je suis un projet</p>
-            <img src="./assets/omf_projet1.png" alt="Image du projet 1">
-        </article>
-        <article>
-            <h3>Projet 2: PRINT IT </h3>
-            <p>Je suis un projet</p>
-            <img src="./assets/projet2.jpg" alt="projet2">
-        </article>
-        <article>
-            <h3>Projet 3: BOOKI</h3>
-            <p>Je suis un projet</p>
-            <img src="./assets/projet3.jpg" alt="projet3">
-        </article> -->
+            <div class="btn-group">
+                <a href="#" class="btn">Embauche-moi</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="assets/faty.jpeg" alt="">
+        </div>
+    </section>
 
+    <section class="education" id="education">
+        <h2 class="heading">Parcours</h2>
 
-        <footer>
-            <p>© 2025 by Faty</p>
-            <li><a href="https://www.linkedin.com/"> <img src="./assets/linkedin_logo.png" /></a></li>
-            <li><a href="https://www.instagram.com/"> <img src="./assets/Instagram_logo.png" /></a></li>
-            <li><a href="https://www.facebook.com/"> <img src="./assets/Facebook_logo.webp" /></a></li>
-        </footer>
+        <div class="timeline-items">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2026</div>
+                <div class="timeline-content">
+                    <h3>ADATECHSCHOOL</h3>
+                    <p>Licence Concepteur d'application mobile</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2020</div>
+                <div class="timeline-content">
+                    <h3>ESGCI</h3>
+                    <p>Master II en Business Development et management commercial</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2017</div>
+                <div class="timeline-content">
+                    <h3>IDRAC BUSINESS SCHOOL</h3>
+                    <p>Bachelor Responsable Marketing et développement commercial</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2016</div>
+                <div class="timeline-content">
+                    <h3>MÉDICIS ALTERNANCE</h3>
+                    <p>BTS Management des Unités commerciales</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projets" id="projets">
+        <h2 class="heading">Projets</h2>
+
+        <div class="projets-container">
+            <div class="projet-box">
+                <div class="projet-info">
+                    <h4>DÉVELOPPEMENT FRONT-END </h4>
+                    <a href="https://culture-quizz.vercel.app/" class="projet-link" target="_blank"><p>Culture Quizz</p></a>
+                    <a href="https://fatydm.github.io/Projet-4---Animations.CSS/" class="projet-link" target="_blank"><p>OhMyFood</p></a>
+                    <a href="dataviz-gray.vercel.app" class="projet-link" target="_blank"><p>Global Fooder</p></a>
+
+                </div>
+            </div>
+            <div class="projet-box">
+                <div class="projet-info">
+                    <h4>DÉVELOPPEMENT BACK-END</h4>
+                    <p>Projet à venir... </p>
+                </div>
+            </div>
+            <div class="projet-box">
+                <div class="projet-info">
+                    <h4>FRAMEWORK</h4>
+                    <a href="https://kasaproject.vercel.app/" class="projet-link" target="_blank"><p>Kasa</p></a>
+                </div>
+            </div>
+            <div class="projet-box">
+                <div class="projet-info">
+                    <h4>À VENIR</h4>
+                        <p>Explication du projet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contacte-<span>Moi</span></h2>
+
+        <form action="">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Nom & Prénom">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Numéro de téléphone">
+                    <input type="text" placeholder="Objet">
+                </div>
+            </div>
+
+            <div class="input-group-2">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+                <input type="submit" value="Envoyer le message" class="btn">
+            </div>
+        </form>
+    </section>
+    <script src="script.js"></script>
 </body>
+<footer class="footer">
+    <div class="social">
+        <a href="https://www.linkedin.com/in/fdiarra/" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
+        <a href="https://github.com/fatydm " target="_blank"><i class="fa-brands fa-square-github"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram" target="_blank"></i></a>
+        <a href="#"><i class="fa-brands fa-square-x-twitter" target="_blank"></i></a>
+    </div>
+
+    <ul class="list">
+        <li>
+            <a href="#projets">Projets</a>
+        </li>
+        <li>
+            <a href="#education">À propos de moi</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+    </ul>
+    <p class="copyright">
+        © Faty Diarra | Tous droits réservés
+    </p>
+</footer>
