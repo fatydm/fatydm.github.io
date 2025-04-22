@@ -26,7 +26,20 @@ setInterval(textLoad, 12000);
 
 // Menu déroulant
 let menuIcon = document.getElementById('menu');
+let closeIcon =  document.getElementById('close');
 let navbar = document.querySelector('.navbar');
 let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a')
+let navLinks = document.querySelectorAll('header nav a');
 
+
+menuIcon.addEventListener('click', () => {
+    navbar.style.display = 'block'
+    menuIcon.style.display = 'none'
+    closeIcon.style.display = 'block'
+})
+
+closeIcon.addEventListener('click', () => {
+    navbar.style.display = 'none'
+    closeIcon.style.display = 'none'
+    menuIcon.style.display = 'block'
+})
