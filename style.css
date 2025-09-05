@@ -18,10 +18,12 @@ html {
 }
 
 :root {
-    --bg-color: #877f8b;
-    --second-bg-color: #4f4851;
-    --text-color: white;
-    --main-color: rgb(190, 187, 185);
+    --bg-color: #a396aa;
+    --second-bg-color: #f8f8f8;
+    /* --bg-color: #877f8b;
+    --second-bg-color: #4f4851; */
+    --text-color: #531f58;
+    --main-color: #d9c4dd;
     --bg-html: #7c6c84;
     --bg-css: #57475f;
     --bg-sass: #876a96;
@@ -167,6 +169,7 @@ span {
 
 .navbar a:focus-visible,
 .navbar a:active,
+.navbar a:hover,
 .navbar a:visited {
     color: var(--main-color);
     text-decoration: underline;

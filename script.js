@@ -1,28 +1,51 @@
 // Animation page d'accueil
-const text_animate = document.querySelector('.second-text')
+const text_animate = document.querySelector('.second-text');
+const texts = [
+    'dev full-stack',
+    'junior',
+    'en reconversion pro',
+    'prête à en apprendre plus',
+    'ouverte d\'esprit',
+    'cool 😎'
+];
+let index = 0;
 
-const textLoad = () => {
-    setTimeout(() => {
-        text_animate.textContent = 'Dev Full-stack ';
-    }, 0);
-    setTimeout(() => {
-        text_animate.textContent = 'Mais junior';
-    }, 4000);
-    setTimeout(() => {
-        text_animate.textContent = 'En reconversion pro';
-    }, 8000);
-    setTimeout(() => {
-        text_animate.textContent = 'Prête à en apprendre plus';
-    }, 12000);
-    setTimeout(() => {
-        text_animate.textContent = 'Ouverte d\'esprit';
-    }, 16000);
-    setTimeout(() => {
-        text_animate.textContent = 'Cool 😎';
-    }, 20000);
-}
-textLoad()
-setInterval(textLoad, 13000);
+const showNextText = () => {
+    text_animate.textContent = texts[index];
+    index = (index + 1) % texts.length;
+};
+
+// Affiche le premier texte tout de suite
+showNextText();
+// Change le texte toutes les 4 secondes
+setInterval(showNextText, 4000);
+
+
+// // Animation page d'accueil
+// const text_animate = document.querySelector('.second-text')
+
+// const textLoad = () => {
+//     setTimeout(() => {
+//         text_animate.textContent = 'dev web full-stack';
+//     }, 0);
+//     setTimeout(() => {
+//         text_animate.textContent = 'junior';
+//     }, 6000);
+//     setTimeout(() => {
+//         text_animate.textContent = 'en reconversion pro';
+//     }, 10000);
+//     setTimeout(() => {
+//         text_animate.textContent = 'prête à en apprendre plus';
+//     }, 15000);
+//     setTimeout(() => {
+//         text_animate.textContent = 'ouverte d\'esprit';
+//     }, 20000);
+//     setTimeout(() => {
+//         text_animate.textContent = 'cool 😎';
+//     }, 25000);
+// }
+// textLoad()
+// setInterval(textLoad, 15000);
 
 // Menu déroulant
 let menuIcon = document.getElementById('menu');
