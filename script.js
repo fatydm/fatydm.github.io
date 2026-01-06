@@ -17,7 +17,7 @@ const showNextText = () => {
 
 // Affiche le premier texte tout de suite
 showNextText();
-// Change le texte toutes les 4 secondes
+// Change le texte toutes les 4fd secondes
 setInterval(showNextText, 4000);
 
 
