@@ -17,35 +17,9 @@ const showNextText = () => {
 
 // Affiche le premier texte tout de suite
 showNextText();
-// Change le texte toutes les 4fd secondes
-setInterval(showNextText, 4000);
+// Change le texte toutes les 7 secondes
+setInterval(showNextText, 7000);
 
-
-// // Animation page d'accueil
-// const text_animate = document.querySelector('.second-text')
-
-// const textLoad = () => {
-//     setTimeout(() => {
-//         text_animate.textContent = 'dev web full-stack';
-//     }, 0);
-//     setTimeout(() => {
-//         text_animate.textContent = 'junior';
-//     }, 6000);
-//     setTimeout(() => {
-//         text_animate.textContent = 'en reconversion pro';
-//     }, 10000);
-//     setTimeout(() => {
-//         text_animate.textContent = 'prête à en apprendre plus';
-//     }, 15000);
-//     setTimeout(() => {
-//         text_animate.textContent = 'ouverte d\'esprit';
-//     }, 20000);
-//     setTimeout(() => {
-//         text_animate.textContent = 'cool 😎';
-//     }, 25000);
-// }
-// textLoad()
-// setInterval(textLoad, 15000);
 
 // Menu déroulant
 let menuIcon = document.getElementById('menu');
