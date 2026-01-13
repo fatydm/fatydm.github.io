@@ -35,7 +35,6 @@ html {
     --bg-postgre: rgb(55, 70, 130);
     --bg-express: rgb(84, 101, 168);
     --bg-pwa: rgb(227, 133, 227);
-
 }
 
 body {
@@ -128,7 +127,7 @@ body.light .timeline-content {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 3rem 12% 3rem;
+    padding: 1rem 5% 1rem;
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     display: flex;
@@ -138,7 +137,7 @@ body.light .timeline-content {
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--text-color);
     font-weight: 800;
     cursor: pointer;
@@ -160,7 +159,7 @@ span {
 }
 
 .navbar a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--text-color);
     margin-left: 4rem;
     font-weight: 500;
@@ -185,15 +184,15 @@ span {
 /******************************************** STYLE DU BODY ***********************************************
 ***********************************************************************************************************/
 section {
-    min-height: 100vh;
-    padding: 5rem 12% 15rem;
+    min-height: 80vh;
+    padding: 5rem 4% 5rem;
 }
 
 .home {
     display: flex;
     flex-direction: column;
-    margin-top: 5em;
-    gap: 4rem;
+    /* margin-top: 5em; */
+    gap: 2rem;
 }
 
 .home-top {
@@ -245,14 +244,14 @@ section {
 }
 
 h2{
-    margin: 30px;
+    margin: 10px;
     color: var(--text-color);
     text-align: center;
     font-size: 5rem;
 }
 
 .stacks {
-    margin: 1rem 0;
+    /* margin: 1rem 0; */
     text-align: center;
 }
 
@@ -418,33 +417,34 @@ h2{
     border-radius: 2rem;
     transition: 0.4s ease-in-out;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    height: auto;
+    max-height: 600px
 }
 
 .projet-box:hover {
     transform: scale(1.03);
 }
 
-.projet-content-horizontal {
-    display: flex; 
-    flex-direction: row;
-    gap: 2rem;
-    padding: 1rem;
-}
-
 .projet-img {
-    width: 30%;
-    height: auto;
+    margin-top: 1px;
+    width: 100%;
     border: 2px solid #53455a;
-    height: 220px;
+    height: 200px;
     border-radius: 1.5rem;
 }
 
 .projet-img img {
+    text-align: center;
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 1.5rem;
+}
+
+.projet-content-horizontal {
+    /* display: flex; 
+    flex-direction: row;
+    gap: 2rem; */
+    padding: 1rem;
 }
 
 .projet-texte {
@@ -458,6 +458,7 @@ h2{
 
 .projet-texte h4 {
     font-size: 2rem;
+    text-align: center;
 }
 
 .projet-texte p {
@@ -481,6 +482,7 @@ ul {
 .projet-info-a {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     height: 100%;
     gap: 2rem;
 }
@@ -782,9 +784,9 @@ ul {
         height: 40vh;
     }
 
-    section {
+    /* section {
         padding: 10rem 3% 2rem;
-    }
+    } */
 
     .projets {
         padding-bottom: 7rem;
