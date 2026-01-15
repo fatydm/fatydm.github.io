@@ -768,7 +768,7 @@ ul {
 
 /******************************************** PARTIE RESPONSIVE *******************************************
 ***********************************************************************************************************/
-@media(max-width: 1285px) {
+@media(min-width: 1285px) {
     html {
         font-size: 80%;
     }
@@ -787,13 +787,19 @@ ul {
         height: 40vh;
     }
 
-    /* section {
+    section {
         padding: 10rem 3% 2rem;
-    } */
+    }
 
     .projets {
         padding-bottom: 7rem;
     }
+
+    .projets-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
     
     .contact form {
         flex-direction: column;
