@@ -498,7 +498,7 @@ ul {
 }
 
 .loginText{
-    font-size: 0.5em;
+    font-size: 0.6em;
 }
 
 /******************************************** PARTIE STACK *******************************************/
@@ -796,11 +796,15 @@ ul {
     }
 
     .projets-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
     
+    .loginText{
+        font-size: 1em;
+    }
+
     .contact form {
         flex-direction: column;
     }
@@ -886,6 +890,10 @@ ul {
 
     .projets-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .loginText{
+        font-size: 0.8em;
     }
 }
 
