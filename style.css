@@ -184,8 +184,8 @@ span {
 /******************************************** STYLE DU BODY ***********************************************
 ***********************************************************************************************************/
 section {
-    min-height: 80vh;
-    padding: 5rem 4% 5rem;
+    /* min-height: 10vh; */
+    padding: 10rem 8%;
 }
 
 .home {
@@ -483,7 +483,6 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 100%;
     gap: 2rem;
 }
 
@@ -498,12 +497,16 @@ ul {
     color: var(--second-bg-color);
 }
 
+.loginText{
+    font-size: 0.5em;
+}
+
 /******************************************** PARTIE STACK *******************************************/
 .projet-stack {
      margin-top: auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .stack {
@@ -948,7 +951,7 @@ ul {
 
     .projet-box {
         height: 400px;
-        overflow: hidden;
+        overflow: scroll;
     }
 
     .projet-content-horizontal {
@@ -964,7 +967,7 @@ ul {
 
     .projet-texte {
         flex: 1;                 
-        overflow-y: auto;       
+        overflow-y: scroll;       
         padding-left: 6px;
     }
 
