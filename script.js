@@ -1,6 +1,8 @@
-// Animation page d'accueil
-const text_animate = document.querySelector('.second-text');
-const texts = [
+//===================================
+// ANIMATION DU TEXTE (Typing effect)
+// ==================================
+document.addEventListener('DOMContentLoaded', function() {
+    const texts = [
     'dev full-stack',
     'junior',
     'en reconversion pro',
@@ -10,18 +12,32 @@ const texts = [
 ];
 let index = 0;
 
+const textAnimate = document.querySelector('.dynamic-text');
+
 const showNextText = () => {
-    text_animate.textContent = texts[index];
-    index = (index + 1) % texts.length;
+    if (textAnimate) {
+        // Change le texte pendant que le curseur est à droite (caché)
+        textAnimate.textContent = texts[index];
+        index = (index + 1) % texts.length;
+        
+        // Redémarre l'animation
+        textAnimate.style.animation = 'none';
+        setTimeout(() => {
+            textAnimate.style.animation = '';
+        }, 10);
+    }
 };
 
-// Affiche le premier texte tout de suite
+// Affiche le premier texte immédiatement
 showNextText();
-// Change le texte toutes les 7 secondes
-setInterval(showNextText, 7000);
 
+// Change le texte toutes les 5 secondes (synchro parfaite avec l'animation CSS)
+setInterval(showNextText, 5000);
+});
 
-// Menu déroulant
+// ========================
+// GESTION DU MENU MOBILE
+// ========================
 let menuIcon = document.getElementById('menu');
 let closeIcon = document.getElementById('close');
 let navbar = document.querySelector('.navbar');
