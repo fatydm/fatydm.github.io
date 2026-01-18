@@ -1,0 +1,65 @@
+/* ============================================================
+ CONFIGURATION GLOBALE
+   ============================================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+:root {
+    /* Couleurs mode sombre */
+    --bg-color: #a396aa;
+    --second-bg-color: #9575a6;
+    --text-color: #531f58;
+    --main-color: #d9c4dd;
+    
+    /* Couleurs des stacks */
+    --bg-html: #7c6c84;
+    --bg-css: #57475f;
+    --bg-sass: #876a96;
+    --bg-javascript: #ae9eb6;
+    --bg-typescript: #a777bf;
+    --bg-nextjs: #53455a;
+    --bg-express: #322538;
+    --bg-prisma: #c5add2;
+    --bg-react: #291f2f;
+    --bg-nodejs: rgb(74, 95, 181);
+    --bg-postgre: rgb(55, 70, 130);
+    --bg-express-alt: rgb(84, 101, 168);
+    --bg-pwa: rgb(227, 133, 227);
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ============================================================
+   SCROLLBAR PERSONNALISÉE
+   ============================================================ */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg-color);
+}
+
+

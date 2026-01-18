@@ -4,82 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FD Website</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Portfolio de Faty Diarra - Développeuse Web en reconversion professionnelle">
+    <title>Faty Diarra - Portfolio Développeuse Web</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/projets.css">
+    <link rel="stylesheet" href="css/education.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d6b9f53705.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="dark">
+    <!-- HEADER -->
     <header class="header">
         <a href="#home" class="logo">FD<span>Portfolio</span></a>
-
-        <i class="fa-solid fa-bars menu-icon" id="menu"></i>
-        <i class="fa-solid fa-xmark" id="close"></i>
-
+        
+        <i class="fa-solid fa-bars menu-icon" id="menu" aria-label="Ouvrir le menu"></i>
+        <i class="fa-solid fa-xmark" id="close" aria-label="Fermer le menu"></i>
+        
         <nav class="navbar">
             <a href="#home">Accueil</a>
             <a href="#projets">Projets</a>
             <a href="#education">Parcours</a>
             <a href="#contact">Contact</a>
-            <a href="CVDevWebPortefolio.pdf" target="_blank">CV</a>
+            <a href="CVDevWebPortefolio.pdf" target="_blank" rel="noopener noreferrer">CV</a>
         </nav>
-
-        <!-- <div class="switchMode">
-            <i class="fa-solid fa-sun switch lightBtn"></i>
-            <i class="fa-solid fa-moon switch darkBtn"></i>
-        </div> -->
+        
+        <div class="theme-switch">
+            <i class="fa-solid fa-sun switch lightBtn" id="lightBtn" aria-label="Activer le mode clair"></i>
+            <i class="fa-solid fa-moon switch darkBtn" id="darkBtn" aria-label="Activer le mode sombre"></i>
+        </div>
     </header>
 
+    <!-- SECTION HOME -->
     <section class="home" id="home">
         <div class="home-top">
             <div class="home-content">
                 <h1>Salut, moi c'est <span>Faty</span></h1>
                 <div class="animation-container">
                     <h3>
-                        <span class="text first-text"> Je suis </span>
-                        <span class="text second-text"> </span>
+                        <span class="text first-text">Je suis </span>
+                        <span class="text second-text"></span>
                     </h3>
                 </div>
                 <p>
-                    En pleine reconversion professionnelle depuis janvier 2025, je suis aujourd'hui à la recherche d'une alternance en contrat d'apprentissage 
-                    1 an minimum / Rythme de 4j/1jour. <br>
-                    <br>
+                    En pleine reconversion professionnelle depuis janvier 2025, je suis aujourd'hui à la recherche d'une alternance en contrat de professionnalisation 
+                    d'une durée minimum de 12 mois avec un rythme de 4j/1jour.
+                </p>
+                <p>
                     J'ai réalisé plusieurs projets personnels à découvrir ci-dessous.
                 </p>
 
                 <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/fdiarra/" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
-                    <a href="https://github.com/fatydm" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-                    <a href="CVDevWebPortefolio.pdf" target="_blank"><i class="fa-regular fa-file"></i></a>
-
-                    <!-- <a href="#"><i class="fa-brands fa-square-instagram" target="_blank"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-x-twitter" target="_blank"></i></a> -->
+                    <a href="https://www.linkedin.com/in/fdiarra/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/fatydm" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fa-brands fa-square-github"></i>
+                    </a>
+                    <a href="CVDevWebPortefolio.pdf" target="_blank" rel="noopener noreferrer" aria-label="CV">
+                        <i class="fa-regular fa-file"></i>
+                    </a>
                 </div>
-                <div class="stack-used">
-
-                </div>
-                <!-- <div class="btn-group">
-                    <a href="#" class="btn">Embauchez-moi</a>
-                    <a href="#contact" class="btn" mailto="Faty_diarra223@yahoo.fr" >Contacte-moi</a>
-                </div> -->
             </div>
+
             <div class="home-img">
-                <img src="assets/faty.jpeg" alt="" class="photo_black">
-                <img src="assets/faty_color.png" alt="" class="photo_color">
+                <img src="assets/faty.jpeg" alt="Photo de profil de Faty Diarra" class="photo_black">
+                <img src="assets/IMG_0812.JPG" alt="Photo de profil de Faty Diarra en couleur" class="photo_color">
             </div>
         </div>
 
+        <!-- STACKS & TECHNOLOGIES -->
         <article class="stacks">
             <h3>Stacks & technologies utilisées</h3>
             
             <div class="stacks-container">
                 <div class="stack-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
                     <span>HTML</span>
                 </div>
                 
                 <div class="stack-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
                     <span>CSS</span>
                 </div>
                 
@@ -131,76 +148,67 @@
         </article>
     </section>
 
+    <!-- SECTION PROJETS -->
     <section class="projets" id="projets">
         <h2 class="heading">Projets</h2>
 
         <div class="projets-container">
 
+            <!-- Projet KEY OF BEAUTY -->
             <div class="projet-box en-cours">
                 <div class="projet-img">
-                    <img src="./assets/kob.png" alt="Développement Back-End">
+                    <img src="./assets/kob.png" alt="Capture d'écran du projet Key of Beauty">
                 </div>
-                <div class="projet-content-horizontal">
+                <div class="projet-content">
                     <div class="projet-texte">
                         <h4>KEY OF BEAUTY</h4>
-                        <!-- <div class="projet-info-a">
-                            <a href="https://green-quest-front-end.vercel.app/" class="projet-link"
-                                target="_blank">
-                                <p>Démo <i class="fa-solid fa-globe"></i></p>
-                            </a>
-                            <a href="https://github.com/fatydm/green_quest_front_end/tree/main" class="projet-link" target="_blank">
-                                <p>Repo Front <i class="fa-brands fa-square-github"></i></p>
-                            </a>
-                            <a href="https://github.com/fatydm/green-quest-back-end/tree/main" class="projet-link ajust" target="_blank">
-                                <p>Repo Back <i class="fa-brands fa-square-github"></i></p>
-                            </a>
-                        </div> -->
-                            <p class="projet-p-intro">
-                                Prestations make-up beauty 
-                            </p>
-                            <ul>
-                                <li>Projet Fullstack</li>
-                                <li>Galerie et carrousel des réalisations</li>
-                                <li>Affichage cards des services</li>
-                                <li>Prise de rendez-vous en ligne</li>
-                                <li>Mise en place d'une newsletter</li>
-                                <li>Page de connexion</li>
-                                <li>Déblocage des modules make-up après connexion</li>
-                            </ul>
-                            <div class="projet-stack">
-                                <span class="stack nextjs">NextJs</span>
-                                <span class="stack express">Express</span>
-                                <span class="stack postgre">PostgreSQL</span>
-                                <span class="stack nodejs">NodeJs</span>
-                            </div>
+                        <p class="projet-p-intro">
+                            Prestations make-up beauty 
+                        </p>
+                        <ul>
+                            <li>Projet Fullstack</li>
+                            <li>Galerie et carrousel des réalisations</li>
+                            <li>Affichage cards des services</li>
+                            <li>Prise de rendez-vous en ligne</li>
+                            <li>Mise en place d'une newsletter</li>
+                            <li>Page de connexion</li>
+                            <li>Déblocage des modules make-up après connexion</li>
+                        </ul>
+                        <div class="projet-stack">
+                            <span class="stack nextjs">NextJs</span>
+                            <span class="stack express">Express</span>
+                            <span class="stack postgre">PostgreSQL</span>
+                            <span class="stack nodejs">NodeJs</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
+            <!-- Projet CULTURE QUIZZ -->
             <div class="projet-box">
                 <div class="projet-img">
-                    <img src="./assets/culture_quizz.png" alt="Culture Quizz">
+                    <img src="./assets/culture_quizz.png" alt="Capture d'écran du projet Culture Quizz">
                 </div>
-                <div class="projet-content-horizontal">
+                <div class="projet-content">
                     <div class="projet-texte">
                         <h4>CULTURE QUIZZ</h4>
                         <div class="projet-info-a">
-                            <a href="https://culture-quizz.vercel.app/" class="projet-link" target="_blank">
+                            <a href="https://culture-quizz.vercel.app/" class="projet-link" target="_blank" rel="noopener noreferrer">
                                 <p>Démo <i class="fa-solid fa-globe"></i></p>
                             </a>
-                            <a href="https://github.com/fatydm/culture_quizz" class="projet-link" target="_blank">
+                            <a href="https://github.com/fatydm/culture_quizz" class="projet-link" target="_blank" rel="noopener noreferrer">
                                 <p>Repo GitHub <i class="fa-brands fa-square-github"></i></p>
                             </a>
                         </div>
                         <p class="projet-p-intro">
-                            Ce quiz interactif a été réalisé en groupe. Il mêle des questions de culture générale,
+                            Ce quiz interactif mêle des questions de culture générale,
                             de cinéma, jeux vidéos, etc...
                         </p>
                         <ul>
                             <li>Projet Front-end</li>
                             <li>Questions aléatoires</li>
                             <li>Timer</li>
-                            <li>Correction immédiate de la question </li>
+                            <li>Correction immédiate de la question</li>
                             <li>Effets sonores, imitation "Qui veut gagner des millions"</li>
                         </ul>
                         <div class="projet-stack">
@@ -212,204 +220,157 @@
                 </div>
             </div>
 
+            <!-- Projet GREEN QUEST -->
             <div class="projet-box">
                 <div class="projet-img">
-                    <img src="./assets/greenquest.png" alt="Développement Back-End">
+                    <img src="./assets/greenquest.png" alt="Capture d'écran du projet Green Quest">
                 </div>
-                <div class="projet-content-horizontal">
+                <div class="projet-content">
                     <div class="projet-texte">
                         <h4>GREEN QUEST</h4>
                         <div class="projet-info-a">
-                            <a href="https://green-quest-front-end.vercel.app/" class="projet-link"
-                                target="_blank">
+                            <a href="https://green-quest-front-end.vercel.app/" class="projet-link" target="_blank" rel="noopener noreferrer">
                                 <p>Démo <i class="fa-solid fa-globe"></i></p>
                             </a>
-                            <a href="https://github.com/fatydm/green_quest_front_end/tree/main" class="projet-link" target="_blank">
+                            <a href="https://github.com/fatydm/green_quest_front_end/tree/main" class="projet-link" target="_blank" rel="noopener noreferrer">
                                 <p>Repo Front <i class="fa-brands fa-square-github"></i></p>
                             </a>
-                            <a href="https://github.com/fatydm/green-quest-back-end/tree/main" class="projet-link ajust" target="_blank">
+                            <a href="https://github.com/fatydm/green-quest-back-end/tree/main" class="projet-link" target="_blank" rel="noopener noreferrer">
                                 <p>Repo Back <i class="fa-brands fa-square-github"></i></p>
                             </a>
                         </div>
-                            <p class="projet-p-intro">
-                                Site associatif de collecte de déchets <span class="loginText">(logIn: fdiarra - 1234)</span>
-                            </p>
-                            <ul>
-                                <li>Projet Fullstack</li>
-                                <li>Déclaration de collecte</li>
-                                <li>Échange de points contre des dons à des associations</li>
-                                <li>Leaderboard : classement par montant total de dons</li>
-                                <li>Recherche de volontaires par nom ou ville</li>
-                                <li>Mise à jour / suppression de volontaires</li>
-                            </ul>
-                            <div class="projet-stack">
-                                <span class="stack nextjs">NextJs</span>
-                                <span class="stack express">Express</span>
-                                <span class="stack postgre">PostgreSQL</span>
-                                <span class="stack nodejs">NodeJs</span>
-                            </div>
+                        <p class="projet-p-intro">
+                            Site associatif de collecte de déchets <br> <span class="loginText">(logIn: fdiarra - 1234)</span>
+                        </p>
+                        <ul>
+                            <li>Projet Fullstack</li>
+                            <li>Déclaration de collecte</li>
+                            <li>Échange de points contre des dons à des associations</li>
+                            <li>Leaderboard : classement par montant total de dons</li>
+                            <li>Recherche de volontaires par nom ou ville</li>
+                            <li>Mise à jour / suppression de volontaires</li>
+                        </ul>
+                        <div class="projet-stack">
+                            <span class="stack nextjs">NextJs</span>
+                            <span class="stack express">Express</span>
+                            <span class="stack postgre">PostgreSQL</span>
+                            <span class="stack nodejs">NodeJs</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
-             <div class="projet-box">
-                 <div class="projet-img">
-                     <img src="./assets/adaopte.png" alt="Img du logo">
-                 </div>
-                <div class="projet-content-horizontal">
+            <!-- Projet ADAOPTE -->
+            <div class="projet-box">
+                <div class="projet-img">
+                    <img src="./assets/adaopte.png" alt="Capture d'écran du projet Adaopte">
+                </div>
+                <div class="projet-content">
                     <div class="projet-texte">
                         <h4>ADAOPTE</h4>
                         <div class="projet-info-a">
-                            <a href="https://adaopte.vercel.app" class="projet-link" target="_blank">
+                            <a href="https://adaopte.vercel.app" class="projet-link" target="_blank" rel="noopener noreferrer">
                                 <p>Démo <i class="fa-solid fa-globe"></i></p>
                             </a>
-                            <a href="https://github.com/fatydm/adaopte" class="projet-link" target="_blank">
+                            <a href="https://github.com/fatydm/adaopte" class="projet-link" target="_blank" rel="noopener noreferrer">
                                 <p>Repo GitHub <i class="fa-brands fa-square-github"></i></p>
                             </a> 
                         </div>
-                            <p class="projet-p-intro">
-                                Plateforme associatif de mise en relation pour l'adoption d'animaux abandonnés.
-                            </p>
-                            <ul>
-                                <li>Projet Front-end</li>
-                                <li>Recherche d'animaux par type et localisation</li>
-                                <li>Filtrage dynamique et pagination des résultats</li>
-                                <li>Fiches détaillées pour chaque animal</li>
-                                <li>Section bénévolat pour rejoindre l'équipe</li>
-                                <li>Interface responsive et accessible</li>
-                                <li>Composants réutilisables (Call-to-Action)</li>
-                            </ul>
-                            <div class="projet-stack">
-                                <span class="stack nextjs">Next.js</span>
-                                <span class="stack react">React</span>
-                                <span class="stack css">CSS Modules</span>
-                            </div>
+                        <p class="projet-p-intro">
+                            Plateforme associative de mise en relation pour l'adoption d'animaux abandonnés.
+                        </p>
+                        <ul>
+                            <li>Projet Front-end</li>
+                            <li>Recherche d'animaux par type et localisation</li>
+                            <li>Filtrage dynamique et pagination des résultats</li>
+                            <li>Fiches détaillées pour chaque animal</li>
+                            <li>Section bénévolat pour rejoindre l'équipe</li>
+                            <li>Interface responsive et accessible</li>
+                            <li>Composants réutilisables (Call-to-Action)</li>
+                        </ul>
+                        <div class="projet-stack">
+                            <span class="stack nextjs">Next.js</span>
+                            <span class="stack react">React</span>
+                            <span class="stack css">CSS Modules</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
+            <!-- Projet OHMYFOOD -->
             <div class="projet-box">
                 <div class="projet-img">
-                    <img src="./assets/omf.png" alt="OhMyFood">
+                    <img src="./assets/omf.png" alt="Capture d'écran du projet OhMyFood">
                 </div>
-                <div class="projet-content-horizontal">
+                <div class="projet-content">
                     <div class="projet-texte">
                         <h4>OHMYFOOD</h4>
                         <div class="projet-info-a">
-                            <a href="https://fatydm.github.io/ohMyFood/" class="projet-link" target="_blank">
+                            <a href="https://fatydm.github.io/ohMyFood/" class="projet-link" target="_blank" rel="noopener noreferrer">
                                 <p>Démo <i class="fa-solid fa-globe"></i></p>
                             </a>
-                            <a href="https://github.com/fatydm/ohmyfood" class="projet-link" target="_blank">
+                            <a href="https://github.com/fatydm/ohmyfood" class="projet-link" target="_blank" rel="noopener noreferrer">
                                 <p>Repo GitHub <i class="fa-brands fa-square-github"></i></p>
                             </a>
                         </div>
-                            <p class="projet-p-intro">
-                                Création d'un site de réservation de restaurants et de réservation de plats à l'avance.
-                            </p>
-                            <ul>
-                                <li>Projet Front-end</li>
-                                <li>Intégration d'une maquette en mobile-first à partir d’un prototype Figma</li>
-                                <li>Animations CSS (Loader, remplissage des coeurs...)</li>
-                                <li>Mobile first / Responsive design</li>
-                                <li>Organisation du code avec Sass</li>
-                            </ul>
-                            <div class="projet-stack">
-                                <span class="stack html">HTML</span>
-                                <span class="stack css">CSS</span>
-                                <span class="stack sass">SASS</span>
-                            </div>
+                        <p class="projet-p-intro">
+                            Création d'un site de réservation de restaurants et de réservation de plats à l'avance.
+                        </p>
+                        <ul>
+                            <li>Projet Front-end</li>
+                            <li>Intégration d'une maquette en mobile-first à partir d'un prototype Figma</li>
+                            <li>Animations CSS (Loader, remplissage des cœurs...)</li>
+                            <li>Mobile first / Responsive design</li>
+                            <li>Organisation du code avec Sass</li>
+                        </ul>
+                        <div class="projet-stack">
+                            <span class="stack html">HTML</span>
+                            <span class="stack css">CSS</span>
+                            <span class="stack sass">SASS</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
+            <!-- Projet KASA -->
             <div class="projet-box">
                 <div class="projet-img">
-                    <img src="./assets/kasa.png" alt="Kasa">
+                    <img src="./assets/kasa.png" alt="Capture d'écran du projet Kasa">
                 </div>
-                <div class="projet-content-horizontal">
+                <div class="projet-content">
                     <div class="projet-texte">
                         <h4>KASA</h4>
                         <div class="projet-info-a">
-                            <a href="https://kasaproject.vercel.app/" class="projet-link" target="_blank">
+                            <a href="https://kasaproject.vercel.app/" class="projet-link" target="_blank" rel="noopener noreferrer">
                                 <p>Démo <i class="fa-solid fa-globe"></i></p>
                             </a>
-                            <a href="https://github.com/fatydm/kasa" class="projet-link" target="_blank">
+                            <a href="https://github.com/fatydm/kasa" class="projet-link" target="_blank" rel="noopener noreferrer">
                                 <p>Repo GitHub <i class="fa-brands fa-square-github"></i></p>
                             </a>
                         </div>
-                            <p class="projet-p-intro">
-                                Application d'annonces immobilières avec un système de routing
-                                dynamique et composants réutilisables.
-                            </p>
-                            <ul>
-                                <li>Initialisation d'une app avec <em>Create React App</em></li>
-                                <li>Configuration de la navigation entre les pages de l'application avec <em>React
-                                    Router</em></li>
-                                <li>Mise en œuvre des animations CSS</li>
-                            </ul>
-                            <div class="projet-stack">
-                                <span class="stack react">React</span>
-                                <span class="stack css">CSS</span>
-                                <span class="stack sass">Sass</span>
-                            </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- <div class="projet-box">
-                <div class="projet-content-horizontal">
-                    <div class="projet-img">
-                        <img src="./assets/opdo.png" alt="Img du logo">
-                    </div>
-                    <div class="projet-texte">
-                        <h4>OPOINTD'O (PROJET EN COURS)</h4>
-                        <div class="projet-info-a">
-                            <a href="https://projet-mobile-fatydm.vercel.app/" class="projet-link"
-                                target="_blank">
-                                <p>Découvre le site <i class="fa-solid fa-globe"></i></p>
-                            </a>
-                            <a href="https://github.com/fatydm/o-point-do" class="projet-link"
-                                target="_blank">
-                                <p>Repo Fullstack GitHub <i class="fa-brands fa-square-github"></i></p>
-                            </a> 
-                            <p>
-                                Site qui référencie tous les différents points d'eau en IDF
-                            </p>
-                            <ul>
-                                <li>Connexion et/ou inscription</li>
-                                <li>Mettre ses spots préférés en favori</li>
-                                <li>Faire une suggestion de spot</li>
-                                <li>Map intéractive</li>
-                                <li>Mise à jour / suppression de volontaires</li> 
-                            </ul>
-                            <div class="projet-stack">
-                                <span class="stack nextjs">NextJs</span>
-                                <span class="stack postgre">PostgreSQL</span>
-                                <span class="stack prisma">ORM Prisma</span>
-                                <span class="stack pwa">PWA</span>
-
-                            </div>
+                        <p class="projet-p-intro">
+                            Application d'annonces immobilières avec un système de routing
+                            dynamique et composants réutilisables.
+                        </p>
+                        <ul>
+                            <li>Initialisation d'une app avec <em>Create React App</em></li>
+                            <li>Configuration de la navigation entre les pages avec <em>React Router</em></li>
+                            <li>Mise en œuvre des animations CSS</li>
+                        </ul>
+                        <div class="projet-stack">
+                            <span class="stack react">React</span>
+                            <span class="stack css">CSS</span>
+                            <span class="stack sass">Sass</span>
                         </div>
                     </div>
                 </div>
-            </div> -->
-
-            <!-- <div class="projet-box">
-                <div class="projet-content-horizontal">
-                    <div class="projet-img">
-                        <img src="./assets/comingsoon.png" alt="À venir">
-                    </div>
-                    <div class="projet-texte">
-                        <h4>À VENIR</h4>
-                        <p>Explication du projet</p>
-                    </div>
-                </div>
-            </div> -->
+            </div>
 
         </div>
     </section>
 
-   <section class="education" id="education">
+    <!-- SECTION PARCOURS -->
+    <section class="education" id="education">
         <h2 class="heading">Parcours scolaire</h2>
 
         <div class="timeline-items">
@@ -461,10 +422,10 @@
         </div>
     </section> 
 
+    <!-- SECTION CONTACT -->
     <section class="contact" id="contact">
-
         <h2 class="heading">Contacte-<span>Moi</span></h2>
-      <form id="contact-form">
+        <form id="contact-form">
             <div class="input-group">
                 <div class="input-box">
                     <input type="text" placeholder="Nom & Prénom" id="fullname" name="fullname" required>
@@ -477,32 +438,35 @@
             </div>
 
             <div class="input-group-2">
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message" required></textarea>
                 <input type="submit" value="Envoyer le message" class="btn">
             </div>
         </form> 
     </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/fdiarra/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/fatydm" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fa-brands fa-square-github"></i>
+            </a>
+        </div>
+
+        <ul class="list">
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#home">À propos de moi</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+        <p class="copyright">
+            © Faty Diarra | Tous droits réservés
+        </p>
+    </footer>
     
     <script src="script.js"></script>
 </body>
-<footer class="footer">
-    <div class="social">
-        <a href="https://www.linkedin.com/in/fdiarra/" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
-        <a href="https://github.com/fatydm " target="_blank"><i class="fa-brands fa-square-github"></i></a>
-    </div>
 
-    <ul class="list">
-        <li>
-            <a href="#projets">Projets</a>
-        </li>
-        <li>
-            <a href="#home">À propos de moi</a>
-        </li>
-        <li>
-            <a href="#contact">Contact</a>
-        </li>
-    </ul>
-    <p class="copyright">
-        © Faty Diarra | Tous droits réservés
-    </p>
-</footer>
+</html>

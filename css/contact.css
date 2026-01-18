@@ -1,0 +1,99 @@
+
+/* ============================================================
+   SECTION CONTACT
+   ============================================================ */
+.contact {
+    background-color: var(--second-bg-color);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact .input-group {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact form .input-box input {
+    width: 100%;
+    padding: 1.8rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: 2rem;
+    border: 2px solid var(--main-color);
+    transition: all 0.3s ease;
+}
+
+.contact form .input-box input:focus {
+    box-shadow: 0 0 15px var(--main-color);
+    transform: scale(1.02);
+}
+
+.contact form textarea {
+    width: 100%;
+    min-height: 220px;
+    padding: 1.8rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: 2rem;
+    border: 2px solid var(--main-color);
+    resize: vertical;
+    transition: all 0.3s ease;
+}
+
+.contact form textarea:focus {
+    box-shadow: 0 0 15px var(--main-color);
+    transform: scale(1.02);
+}
+
+.contact ::placeholder {
+    color: rgba(83, 31, 88, 0.6);
+}
+
+.input-group-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+/* ============================================================
+   BOUTONS
+   ============================================================ */
+.btn {
+    display: inline-block;
+    padding: 1.2rem 3rem;
+    background: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: black;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px var(--main-color);
+}
+

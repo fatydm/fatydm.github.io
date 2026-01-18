@@ -1,0 +1,25 @@
+
+/* ============================================================
+   SECTIONS GÉNÉRALES
+   ============================================================ */
+section {
+    padding: 10rem 8%;
+    min-height: 100vh;
+}
+
+h1 span {
+    text-shadow: 0 0 15px var(--main-color);
+    color: var(--main-color);
+}
+
+h2 {
+    margin: 0 0 5rem 0;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+span {
+    color: var(--main-color);
+}

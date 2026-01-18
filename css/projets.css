@@ -1,0 +1,185 @@
+
+/* ============================================================
+   SECTION PROJETS
+   ============================================================ */
+.projets {
+    background: var(--second-bg-color);
+}
+
+.projets-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.projet-box {
+    background-color: var(--bg-color);
+    border: 3px solid var(--main-color);
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.projet-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+}
+
+.projet-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.projet-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* transition: transform 0.3s ease; */
+}
+
+/* .projet-box:hover .projet-img img {
+    transform: scale(1.1);
+} */
+
+.projet-content {
+    padding: 1rem;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex: 1; */
+}
+
+.projet-texte {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    color: var(--text-color);
+    flex: 1;
+}
+
+.projet-texte h4 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--text-color);
+    /* margin-bottom: 1rem; */
+}
+
+.projet-info-a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.projet-link {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.projet-link:hover {
+    color: var(--text-color);
+    transform: translateY(-2px);
+}
+
+/* .projet-link p {
+    margin: 0;
+    font-size: 1.4rem;
+} */
+
+.projet-p-intro {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    color: #73097d;
+    font-weight: 500;
+}
+
+.projet-texte ul {
+    padding-left: 2rem;
+    margin: 0;
+}
+
+.projet-texte li {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    /* margin-bottom: 0.5rem; */
+}
+
+.loginText {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+/* Projet en cours - Effet blurry */
+.projet-box.en-cours {
+    position: relative;
+}
+
+.projet-box.en-cours::before {
+    content: "PROJET EN COURS";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 3px;
+    z-index: 10;
+    border-radius: inherit;
+}
+
+.projet-box.en-cours {
+    pointer-events: none;
+    user-select: none;
+}
+
+/* ============================================================
+   STACKS DES PROJETS
+   ============================================================ */
+
+   
+.html { background-color: var(--bg-html); }
+.css { background-color: var(--bg-css); }
+.javascript { background-color: var(--bg-javascript); }
+.sass { background-color: var(--bg-sass); }
+.react { background-color: var(--bg-react); }
+.nodejs { background-color: var(--bg-nodejs); }
+.nextjs { background-color: var(--bg-nextjs); }
+.postgre { background-color: var(--bg-postgre); }
+.express { background-color: var(--bg-express); }
+.pwa { background-color: var(--bg-pwa); }
+
+
+.projet-stack {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1.5rem;
+}
+
+.stack {
+    border: 1px solid #4f4851;
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+}

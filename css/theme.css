@@ -1,0 +1,245 @@
+/* ============================================================
+   SWITCH THEME (LIGHT/DARK MODE)
+   ============================================================ */
+.theme-switch {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.switch {
+    font-size: 2.2rem;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    padding: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--main-color);
+    background: transparent;
+}
+
+.switch:hover {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    transform: rotate(20deg) scale(1.1);
+}
+
+/* Affichage conditionnel selon le thème */
+body.dark .lightBtn {
+    display: flex;
+}
+
+body.dark .darkBtn {
+    display: none;
+}
+
+body.light .lightBtn {
+    display: none;
+}
+
+body.light .darkBtn {
+    display: flex;
+}
+
+/* Animation de rotation lors du changement */
+.switch.rotating {
+    animation: rotate360 0.5s ease;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ============================================================
+   MODE CLAIR
+   ============================================================ */
+body.light {
+    --bg-color: #fce5cd;
+    --second-bg-color: #fff5e6;
+    --text-color: #4f2c07;
+    --main-color: #8c5907;
+}
+
+body.light {
+    --bg-html: #F77F00;     
+    --bg-css: #F9C74F;       
+    --bg-sass: #F4A261;     
+    --bg-javascript: #FAD643;
+    --bg-typescript: #E9C46A;
+    --bg-react: #E76F51;
+    --bg-nextjs: #b89b2f;
+    --bg-nodejs: #7CB342;
+    --bg-express: #cc592f;
+    --bg-express-alt: #A1887F;
+    --bg-prisma: #B39DDB;
+    --bg-postgre: #bad883;
+    --bg-pwa: #a8440a;
+}
+
+
+body.light .projets {
+    background: var(--second-bg-color);
+}
+
+body.light .education,
+body.light footer{
+    background: var(--bg-color);
+}
+
+body.light h1,
+body.light h2,
+body.light h3 {
+    color: var(--text-color);
+}
+
+body.light .logo span,
+body.light h1 span {
+    text-shadow: 0 0 15px var(--main-color);
+    color: var(--main-color);
+}
+
+body.light .navbar a {
+    color: var(--text-color);
+    background-color: transparent;
+}
+
+body.light .navbar a:hover,
+body.light .navbar a:focus {
+    color: var(--main-color);
+}
+
+body.light .navbar a::after {
+    background-color: var(--main-color);
+}
+
+body.light #menu,
+body.light #close {
+    color: var(--main-color);
+}
+
+body.light .switch {
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+
+body.light .switch:hover {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+}
+
+body.light .home-img img {
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+body.light .home-img img:hover {
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color),
+                0 0 100px var(--main-color);
+}
+
+body.light .social-icons a {
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+
+body.light .social-icons a:hover {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+}
+
+body.light .text.second-text {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+}
+
+body.light .text.second-text::before {
+    background-color: var(--bg-color);
+    border-left-color: var(--main-color);
+}
+
+body.light .btn {
+    background: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+body.light .projet-box {
+    background-color: var(--bg-color);
+    border-color: var(--main-color);
+}
+
+body.light .projet-link {
+    color: var(--main-color);
+}
+
+body.light .projet-link:hover {
+    color: var(--text-color);
+}
+
+body.light .projet-p-intro {
+    color: #8b4513;
+}
+
+body.light .timeline-items::before {
+    background-color: var(--main-color);
+}
+
+body.light .timeline-dot {
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color);
+}
+
+body.light .timeline-content {
+    background-color: var(--bg-color);
+    border-color: var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
+}
+
+body.light .timeline-content:hover {
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+body.light .contact form .input-box input,
+body.light .contact form textarea {
+    background: var(--bg-color);
+    border-color: var(--main-color);
+    color: var(--text-color);
+}
+
+body.light .contact form .input-box input:focus,
+body.light .contact form textarea:focus {
+    box-shadow: 0 0 15px var(--main-color);
+}
+
+body.light .contact ::placeholder {
+    color: rgba(180, 95, 6, 0.6);
+}
+
+body.light .footer .social a {
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+body.light .footer .social a:hover {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+}
+
+body.light .footer ul li a:hover {
+    border-bottom-color: var(--main-color);
+    color: var(--main-color);
+}
+
+/* Photo en couleur pour le mode clair */
+body.light .home-img .photo_black {
+    display: none;
+}
+
+body.light .home-img .photo_color {
+    display: flex;
+}
