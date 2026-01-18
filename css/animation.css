@@ -1,26 +1,36 @@
-
 /* ============================================================
    ANIMATION TEXTE
    ============================================================ */
-.animation-container .text {
-    position: relative;
-    color: var(--text-color);
-    font-size: 1.6rem;
-    font-weight: 600;
+
+.animation-container {
+    margin: 2rem 0;
+    display: block !important;
+    width: 100%;
 }
 
 .animation-container h3 {
-    margin-bottom: 3rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-color);
     display: inline-block;
+    margin: 0 0 2rem 0;
 }
 
-.animation-container .text.second-text {
-    color: var(--bg-color);
+.animation-container .static-text {
+    color: var(--text-color);
+}
+
+.animation-container .dynamic-text {
+    position: relative;
+    color: #0a0a0a;
     background-color: var(--main-color);
-    padding: 0 5px;
+    padding: 0 8px;
+    display: inline-block;
+    height: 1.8rem;
+    line-height: 1.8rem;
 }
 
-.text.second-text::before {
+.dynamic-text::before {
     content: '';
     position: absolute;
     top: 0;
@@ -29,15 +39,26 @@
     width: 100%;
     background-color: var(--bg-color);
     border-left: 2px solid var(--main-color);
-    animation: animate 7s steps(12) infinite;
+    animation: typing 5s ease-in-out infinite;
 }
 
-@keyframes animate {
-    40%,
-    60% {
+@keyframes typing {
+    0% {
+        left: 0;
+    }
+    40% {
         left: 100%;
     }
     100% {
-        left: 0;
+        left: 100%;
+    }
+}
+
+/* ============================================================
+   RESPONSIVE - MOBILE
+   ============================================================ */
+@media (max-width: 768px) {
+    .animation-container {
+        display: none !important;
     }
 }
