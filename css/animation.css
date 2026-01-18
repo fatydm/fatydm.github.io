@@ -22,7 +22,7 @@
 
 .animation-container .dynamic-text {
     position: relative;
-    color: #0a0a0a;
+    color: white;
     background-color: var(--main-color);
     padding: 0 8px;
     display: inline-block;

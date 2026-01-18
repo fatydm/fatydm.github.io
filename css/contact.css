@@ -63,7 +63,7 @@
 }
 
 .contact ::placeholder {
-    color: rgba(83, 31, 88, 0.6);
+    color: var(--main-color);
 }
 
 .input-group-2 {
@@ -98,3 +98,14 @@
     box-shadow: 0 0 50px var(--main-color);
 }
 
+/* ============================================================
+   RESPONSIVE DESIGN
+   ============================================================ */
+
+   /* Tablettes */
+@media (max-width: 895px) {
+    .contact .input-group {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}

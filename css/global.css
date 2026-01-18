@@ -13,7 +13,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 63.5%;
     overflow-x: hidden;
 }
 
@@ -62,4 +62,43 @@ body {
     background-color: var(--bg-color);
 }
 
+/* ============================================================
+   RESPONSIVE DESIGN
+   ============================================================ */
 
+/* Desktop large */
+@media (min-width: 1285px) {
+    html {
+        font-size: 70%;
+    }
+    section {
+        padding: 5rem 5%;
+    }
+}
+
+/* Tablettes et petits desktops */
+@media (max-width: 1024px) {
+    html {
+        font-size: 70%;
+    }
+    section {
+        padding: 5rem 5%;
+    }
+}
+
+/* Tablettes */
+@media (max-width: 895px) {
+    html {
+        font-size: 65%;
+    }
+    section {
+        padding: 5rem 5%;
+    }
+}
+
+/* Très petits écrans */
+@media (max-width: 400px) {
+    html {
+        font-size: 55%;
+    }
+}

@@ -81,7 +81,6 @@ body.light {
     --bg-pwa: #a8440a;
 }
 
-
 body.light .projets {
     background: var(--second-bg-color);
 }
@@ -107,12 +106,9 @@ body.light h1 span {
     color: var(--main-color);
 }
 
-body.light .navbar{
-    background-color: var(--bg-color);
-}
-
 body.light .navbar a {
     background-color: transparent;
+    color: var(--bg-color);
 }
 
 body.light .navbar a:hover,

@@ -27,7 +27,6 @@
     line-height: 1.2;
 }
 
-
 .home-content p {
     font-size: 1.6rem;
     line-height: 1.8;
@@ -64,7 +63,6 @@
                 0 0 100px var(--main-color);
     transform: scale(1.05);
 }
-
 
 /* ============================================================
    ICONES SOCIALES
@@ -133,4 +131,73 @@
 
 .stack-item:hover img {
     transform: scale(1.2) translateY(-5px);
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN
+   ============================================================ */
+
+/* Desktop large */
+@media (min-width: 1285px) {
+    .home{
+        padding: 15rem;
+    }
+}
+
+/* Tablettes et petits desktops */
+@media (max-width: 1024px) {
+  
+}
+
+/* Tablettes */
+@media (max-width: 895px) {
+    html {
+        font-size: 65%;
+    }
+    
+    .home {
+        padding-top: 12rem;
+    }
+    
+    .home-top {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 3rem;
+    }
+    
+    .home-content h1 {
+        font-size: 4.5rem;
+    }
+    
+    .home-content h3 {
+        font-size: 2.2rem;
+    }
+    
+    .home-content p {
+        max-width: 100%;
+        margin: 0 auto 1.5rem;
+    }
+
+      .home-img img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+/* Très petits écrans */
+@media (max-width: 400px) {
+    .home-content h1 {
+        font-size: 3rem;
+    }
+
+     .social-icons a {
+        width: 4rem;
+        height: 4rem;
+        font-size: 2rem;
+        margin: 2rem 1rem 2rem 0;
+    }
 }

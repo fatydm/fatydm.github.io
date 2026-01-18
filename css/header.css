@@ -52,3 +52,63 @@
     display: none;
     cursor: pointer;
 }
+
+/* ============================================================
+   RESPONSIVE DESIGN
+   ============================================================ */
+
+/* Tablettes et petits desktops */
+@media (max-width: 1024px) {
+    .navbar a {
+        margin-left: 3rem;
+    }
+
+    /* .home{
+        padding: 10rem;
+    } */
+}
+
+/* Tablettes */
+@media (max-width: 895px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #menu {
+        display: block;
+        margin-left: auto;
+    }
+    
+    .theme-switch {
+        margin-left: 1.5rem;
+        margin-right: 0;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        min-width: 250px;
+        padding: 2rem 3%;
+        background-color: rgba(163, 150, 170, 0.98);
+        backdrop-filter: blur(20px);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        display: none;
+    }
+    
+    .navbar.active {
+        display: block;
+    }
+    
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 2rem 0;
+        color: var(--text-color);
+    }
+}
