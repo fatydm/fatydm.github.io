@@ -58,7 +58,7 @@
     position: absolute;
     left: calc(50% - 10.5px);
     border-radius: 50%;
-    top: 5px;
+    top: 25px;
 }
 
 .timeline-date {
@@ -94,7 +94,7 @@
 
 .timeline-content p {
     color: var(--text-color);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 400;
     line-height: 1.6;
 }

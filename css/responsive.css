@@ -13,7 +13,7 @@
 /* Tablettes et petits desktops */
 @media (max-width: 1024px) {
     html {
-        font-size: 58%;
+        font-size: 68%;
     }
     
     .navbar a {
@@ -24,7 +24,7 @@
 /* Tablettes */
 @media (max-width: 895px) {
     html {
-        font-size: 55%;
+        font-size: 65%;
     }
     
     .header {
@@ -109,7 +109,7 @@
     }
     
     .timeline-dot {
-        left: 10px;
+        left: 12px;
     }
     
     .timeline-item:nth-child(odd),
@@ -125,7 +125,7 @@
 }
 
     section {
-        padding: 10rem 5%;
+        padding: 5rem 5%;
     }
     
     .home-content h1 {
@@ -187,7 +187,12 @@
     .footer{
         margin-bottom: 5px;
     }
-    
+
+     .list{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
 
 /* Très petits écrans */
 @media (max-width: 400px) {

@@ -103,6 +103,10 @@ body.light h1 span {
     color: var(--main-color);
 }
 
+body.light .navbar{
+    background-color: var(--bg-color);
+}
+
 body.light .navbar a {
     color: var(--text-color);
     background-color: transparent;
@@ -243,3 +247,4 @@ body.light .home-img .photo_black {
 body.light .home-img .photo_color {
     display: flex;
 }
+
