@@ -5,6 +5,7 @@
 .home {
     display: flex;
     flex-direction: column;
+    padding: 10rem 5%;
 }
 
 .home-top {
@@ -26,10 +27,6 @@
     line-height: 1.2;
 }
 
-.home-content h3 {
-    font-size: 2rem;
-    margin-bottom: 3rem;
-}
 
 .home-content p {
     font-size: 1.6rem;
