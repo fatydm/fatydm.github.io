@@ -4,11 +4,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     const texts = [
     'dev full-stack',
-    'junior',
-    'en reconversion pro',
+    'en reconversion',
+    'donc junior',
     'prête à en apprendre plus',
     'ouverte d\'esprit',
-    'cool 😎'
+    'toujours motivée'
 ];
 let index = 0;
 
@@ -16,11 +16,10 @@ const textAnimate = document.querySelector('.dynamic-text');
 
 const showNextText = () => {
     if (textAnimate) {
-        // Change le texte pendant que le curseur est à droite (caché)
+        
         textAnimate.textContent = texts[index];
         index = (index + 1) % texts.length;
         
-        // Redémarre l'animation
         textAnimate.style.animation = 'none';
         setTimeout(() => {
             textAnimate.style.animation = '';
@@ -28,10 +27,8 @@ const showNextText = () => {
     }
 };
 
-// Affiche le premier texte immédiatement
 showNextText();
 
-// Change le texte toutes les 5 secondes (synchro parfaite avec l'animation CSS)
 setInterval(showNextText, 5000);
 });
 
@@ -57,7 +54,9 @@ closeIcon.addEventListener('click', () => {
     menuIcon.style.display = 'block'
 })
 
-// Formulaire de contact (ne fonctionne pas)
+// ========================
+// FORMULAIRE DE CONTACT
+// ========================
 const form = document.getElementById('contact-form');
 
 form.addEventListener('submit', async (e) => {
@@ -81,8 +80,9 @@ form.addEventListener('submit', async (e) => {
     }
 });
 
-
-// Switch mode lumières
+// ========================
+// SWITCH LIGHT/DARK
+// ========================
 const light = document.querySelector('.lightBtn')
 const dark = document.querySelector('.darkBtn')
 const imgColor = document.querySelector('.photo_color')
